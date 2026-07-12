@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="373.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tempcon.bmi.FXMLController">
+    <children>
+      <ImageView fitHeight="373.0" fitWidth="602.0" opacity="0.62" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@Screenshot%20(7).png" />
+         </image>
+      </ImageView>
+        <Button fx:id="button" layoutX="405.0" layoutY="100.0" onAction="#handleButtonAction" style="-fx-background-color: Black;" text="calculate" textFill="#02c4ff" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField fx:id="F1" layoutX="120.0" layoutY="44.0" prefHeight="17.0" prefWidth="82.0" promptText="Kg">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <TextField fx:id="F3" layoutX="120.0" layoutY="108.0" prefHeight="25.0" prefWidth="82.0" promptText="Foot">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <TextField fx:id="F4" layoutX="249.0" layoutY="108.0" prefHeight="25.0" prefWidth="82.0" promptText="Inch">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <TextField fx:id="F5" layoutX="118.0" layoutY="219.0" promptText="Kg/meter square">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <Label layoutX="35.0" layoutY="48.0" text="Weight" />
+      <Label layoutX="35.0" layoutY="112.0" text="Height" />
+      <Label layoutX="255.0" layoutY="166.0" text="Height in meter : " />
+      <Label layoutX="35.0" layoutY="223.0" text="BMI" />
+      <Label layoutX="33.0" layoutY="166.0" prefHeight="17.0" prefWidth="82.0" text="Height in Inch :" />
+      <Label fx:id="F2" layoutX="249.0" layoutY="44.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label fx:id="label4" layoutX="53.0" layoutY="275.0" prefHeight="62.0" prefWidth="278.0" />
+      <GridPane layoutX="418.0" layoutY="244.0" prefHeight="124.0" prefWidth="170.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="11.0" minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Catagories" />
+            <Label text="  BMI" GridPane.columnIndex="1" />
+            <Label text="Underweight" GridPane.rowIndex="1" />
+            <Label text="  &lt;18.5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Healthy weight" GridPane.rowIndex="2" />
+            <Label text="  18.5-24.9" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Overweight" GridPane.rowIndex="3" />
+            <Label text="  25-29.9" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Obese level 1 " GridPane.rowIndex="4" />
+            <Label text="  30 -34.9" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Obese level 2" GridPane.rowIndex="5" />
+            <Label text="  35-39.9" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Obese level 3" GridPane.rowIndex="6" />
+            <Label text="  &gt;=40 " GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Button fx:id="button2" layoutX="492.0" layoutY="100.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: Black;" text="Reset" textFill="#02c4ff" />
+      <Label fx:id="label3" layoutX="467.0" layoutY="162.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label fx:id="labelpound" layoutX="353.0" layoutY="48.0" prefHeight="17.0" prefWidth="56.0" />
+      <Label fx:id="label1" layoutX="135.0" layoutY="162.0" prefHeight="25.0" prefWidth="90.0" />
+      <Label fx:id="label2" layoutX="366.0" layoutY="162.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label fx:id="unit" layoutX="301.0" layoutY="223.0" prefHeight="17.0" prefWidth="47.0" />
+    </children>
+</AnchorPane>
